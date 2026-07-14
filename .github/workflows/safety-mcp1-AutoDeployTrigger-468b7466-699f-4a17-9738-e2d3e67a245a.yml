@@ -37,7 +37,7 @@ jobs:
           appSourcePath: ${{ github.workspace }}
           _dockerfilePathKey_: _dockerfilePath_
           _targetLabelKey_: _targetLabel_
-          registryUrl: 
+          registryUrl: ${{ secrets.SAFETYMCP_REGISTRY_URL }}
           registryUsername: ${{ secrets.SAFETYMCP1_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.SAFETYMCP1_REGISTRY_PASSWORD }}
           containerAppName: safety-mcp1
