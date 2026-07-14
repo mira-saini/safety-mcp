@@ -1,6 +1,10 @@
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("PowerBI Server")
+mcp = FastMCP(
+"PowerBI Server",
+host="0.0.0.0",
+port=8000
+)
 
 #search_description
 
