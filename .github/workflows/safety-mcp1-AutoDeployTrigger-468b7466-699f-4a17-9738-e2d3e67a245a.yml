@@ -1,0 +1,49 @@
+name: Trigger auto deployment for safety-mcp1
+
+# When this action will be executed
+on:
+  # Automatically trigger it when detected changes in repo
+  push:
+    branches: 
+      [ main ]
+    paths:
+    - '**'
+    - '.github/workflows/safety-mcp1-AutoDeployTrigger-468b7466-699f-4a17-9738-e2d3e67a245a.yml'
+
+  # Allow manual trigger 
+  workflow_dispatch:      
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions: 
+      id-token: write #This is required for requesting the OIDC JWT Token
+      contents: read #Required when GH token is used to authenticate with private repo
+
+    steps:
+      - name: Checkout to the branch
+        uses: actions/checkout@v2
+
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.SAFETYMCP1_AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.SAFETYMCP1_AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.SAFETYMCP1_AZURE_SUBSCRIPTION_ID }}
+
+      - name: Build and push container image to registry
+        uses: azure/container-apps-deploy-action@v2
+        with:
+          appSourcePath: ${{ github.workspace }}
+          _dockerfilePathKey_: _dockerfilePath_
+          _targetLabelKey_: _targetLabel_
+          registryUrl: 
+          registryUsername: ${{ secrets.SAFETYMCP1_REGISTRY_USERNAME }}
+          registryPassword: ${{ secrets.SAFETYMCP1_REGISTRY_PASSWORD }}
+          containerAppName: safety-mcp1
+          resourceGroup: mira_dev
+          imageToBuild: default/[parameters('containerAppName')]:${{ github.sha }}
+          _buildArgumentsKey_: |
+            _buildArgumentsValues_
+
+
