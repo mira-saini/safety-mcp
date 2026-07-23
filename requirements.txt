@@ -2,3 +2,8 @@ mcp
 azure-identity
 requests
 pandas
+pypdf
+pytesseract
+pdf2image
+Pillow
+pymupdf

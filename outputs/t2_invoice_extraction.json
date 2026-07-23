@@ -1,0 +1,371 @@
+{
+  "source_file": "resources\\documents\\truck_tickets\\t2.pdf",
+  "invoice_fields": {
+    "BillingAddress": {
+      "street_address": "715 Comstock St.",
+      "city": "Santa Clara",
+      "state": "CA",
+      "postal_code": "95054"
+    },
+    "BillingAddressRecipient": "Granite Construction, Co.\nAttn: Accounts Payable",
+    "CustomerName": "Granite Construction, Co.\nAttn: Accounts Payable",
+    "InvoiceDate": "2025-03-05",
+    "InvoiceId": "77866",
+    "InvoiceTotal": {
+      "amount": 6806.94,
+      "currency_code": "USD"
+    },
+    "Items": [
+      {
+        "Amount": {
+          "amount": 1296.56,
+          "currency_code": "USD"
+        },
+        "Date": "2025-02-24",
+        "Description": "Super Dump",
+        "ProductCode": "6117",
+        "Quantity": 8.0,
+        "UnitPrice": {
+          "amount": 162.07,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "Amount": {
+          "amount": 1296.56,
+          "currency_code": "USD"
+        },
+        "Date": "2025-02-25",
+        "Description": "Super Dump",
+        "ProductCode": "6118",
+        "Quantity": 8.0,
+        "UnitPrice": {
+          "amount": 162.07,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "Amount": {
+          "amount": 1296.56,
+          "currency_code": "USD"
+        },
+        "Date": "2025-02-27",
+        "Description": "Super Dump",
+        "ProductCode": "6119",
+        "Quantity": 8.0,
+        "UnitPrice": {
+          "amount": 162.07,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "Amount": {
+          "amount": 1296.56,
+          "currency_code": "USD"
+        },
+        "Date": "2025-02-28",
+        "Description": "Super Dump",
+        "ProductCode": "6120",
+        "Quantity": 8.0,
+        "UnitPrice": {
+          "amount": 162.07,
+          "currency_code": "USD"
+        }
+      },
+      {
+        "Amount": {
+          "amount": 1620.7,
+          "currency_code": "USD"
+        },
+        "Date": "2025-03-01",
+        "Description": "Super Dump",
+        "ProductCode": "6121",
+        "Quantity": 10.0,
+        "UnitPrice": {
+          "amount": 162.07,
+          "currency_code": "USD"
+        }
+      }
+    ],
+    "VendorAddress": {
+      "street_address": "1452 North Vasco Rd. Ste. 358",
+      "city": "Livermore",
+      "state": "CA",
+      "postal_code": "94551"
+    },
+    "VendorAddressRecipient": "tri\nvalley\nWATER TRUCKS, INC.",
+    "VendorEmail": "Debbie@Trivalleywatertrucks.com",
+    "VendorName": "tri\nvalley\nWATER TRUCKS, INC.",
+    "VendorPhoneNumber": "(925) 822-7195",
+    "PurchaseOrder": "1170895"
+  },
+  "pages": {
+    "page_1": {
+      "tables": [
+        [
+          "Date | Invoice #",
+          "3/5/2025 | 77866"
+        ],
+        [
+          "Tag Number | Date | Description | Rate | Hours | Amount",
+          "Job #1170895",
+          "6117 | 2/24/2025 | Super Dump | 162.07 | 8 | 1,296.56",
+          "6118 | 2/25/2025 | Super Dump | 162.07 | 8 | 1,296.56",
+          "6119 | 2/27/2025 | Super Dump | 162.07 | 8 | 1,296.56",
+          "6120 | 2/28/2025 | Super Dump | 162.07 | 8 | 1,296.56",
+          "6121 | 3/1/2025 | Super Dump | 162.07 | 10 | 1,620.70"
+        ]
+      ]
+    },
+    "page_2": {
+      "tables": [
+        [
+          "P.O. #\n1170895 | JOB #\n1170895 | DATE\n02.24.25",
+          "BILL TO\nGRANITE | SHIPPER (RECEIVED FROM) | CONSIGNEE (DELIVERED TO)",
+          "STREET OR BOX | STREET OR BOX",
+          "STREET OR BOX\nHWVI N/B\nCITY",
+          "CITY\nSTATE | CITY\nSTATE",
+          "SANTA CRUZ CA,\nSTATE | COMMODITY | TRAILER OWNER",
+          "PRIME CARRIER\nTR. VALLEY WATER | UNDERLYING CARRIER | TYPE LOADING :unselected:\n:unselected:\nBUNKER\nPOWER"
+        ],
+        [
+          "TAG NO. | WEIGHT | COMMODITY | LOADING | UNLOADING | STAND-BY\nTIME | BRIDGE\nCHARGE",
+          "ARRIVED | DEPART | ARRIVED | DEPART",
+          "1 | 1 LOAD | DIRT | 8:00 | 9:15 | 9:30 | 9:45",
+          "2 | 093475 | 2 LOADS9 | 11\nB-AC | 10:00 | 10:30 | 11:15 | 11:20",
+          "3 | 093475 | 20.07 | REC- AB | 11:25 | 11:30 | 12:30 | 3100",
+          "4 | K\nDIRT\" | 3:15 | 3:30 | 3:45 | 4:00",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        [
+          "FOR OFFICE USE ONLY",
+          "TOTAL STAND-BY",
+          "TOTAL BRIDGE CHARGE",
+          "TOTAL TONS",
+          "HOURLY RATE | TONNAGE",
+          "TOTAL CHARGES\n8.0"
+        ],
+        [
+          "TRUCK NO.\n01 | SEMI-TRACTOR",
+          "TRAILER NO. | TRANSPORT",
+          "SUPER 10 | SEMI END",
+          "TRANSFER | 10-WHEELER",
+          "FLATBED | TRAILER",
+          "OTHER | WATER TRUCK"
+        ],
+        [
+          "TIME DRIVER REPORTED AT LOCATION | NO. OF AXLES",
+          "STARTING\nTIME OF\nLAST TRIP | STARTING TIME\nUNLOADING\nLAST LOAD | :unselected: | OVERALL TIME\nINCLUDING\nRETURN TRIP",
+          "ENDING\nTIME OF\nLAST TRIP | ENDING TIME\nUNLOADING\nLAST LOAD | :unselected: | DEDUCTIBLE\nTIME",
+          "RUNNING\nTIME OF\nLAST TRIP | :unselected: | ELAPSED TIME\nUNLOADING\nLAST LOAD | :unselected: | NET\nCHARGEABLE\nTIME"
+        ]
+      ]
+    },
+    "page_3": {
+      "tables": [
+        [
+          "P.O. #\n1170895 | JOB #\n1170895 | DATE\n02.25.25",
+          "BILL TO\nGRANITE | SHIPPER (RECEIVED FROM) | CONSIGNEE (DELIVERED TO)",
+          "STREET OR BOX | STREET OR BOX",
+          "STREET OR BOX\nHay / N/B\nCITY",
+          "CITY\nSTATE | CITY\nSTATE",
+          "SANTA JURSIZE\nSTATE\nCA, | COMMODITY | TRAILER OWNER",
+          "PRIME CARRIER\nTRI VALLEY WATER. | UNDERLYING CARRIER | TYPE LOADING :unselected:\n:unselected:\nBUNKER\nPOWER"
+        ],
+        [
+          "TAG NO. | WEIGHT | COMMODITY | LOADING | UNLOADING | STAND-BY\nTIME | BRIDGE\nCHARGE",
+          "ARRIVED | DEPART | ARRIVED | DEPART",
+          "1 | 334608 | 18.79 | REC. AB | 7:00 | 7:15 | 8:00 | 8:15",
+          "2 | 1 LOAD | DIRT\" | 8:40 | 8:45 | 10:45 | 11:00",
+          "3 | 2 LOAD | \"DIRT\" | 12:45 | 1:00 | 1:45 | 2:00",
+          "4 | 3 LOAD | DIRT\n4 | 3:00 | 3:15 | 3:45 | 4:00",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        [
+          "FOR OFFICE USE ONLY",
+          "TOTAL STAND-BY",
+          "TOTAL BRIDGE CHARGE",
+          "TOTAL TONS",
+          "HOURLY RATE | TONNAGE",
+          "TOTAL CHARGES\n8.0"
+        ],
+        [
+          "TRUCK NO.\n01 | SEMI-TRACTOR",
+          "TRAILER NO. | TRANSPORT",
+          "SUPER | 10 | SEMI END",
+          "TRANSFER | 10-WHEELER",
+          "FLATBED | TRAILER",
+          "OTHER | WATER TRUCK"
+        ],
+        [
+          "TIME DRIVER REPORTED AT LOCATION | NO. OF AXLES",
+          "STARTING\nTIME OF\nLAST TRIP | STARTING TIME\nUNLOADING\nLAST LOAD | OVERALL TIME\nINCLUDING\nRETURN TRIP",
+          "ENDING\nTIME OF\nLAST TRIP | ENDING TIME\nUNLOADING\nLAST LOAD | DEDUCTIBLE\nTIME",
+          "RUNNING\nTIME OF\nLAST TRIP | ELAPSED TIME\nUNLOADING\nLAST LOAD | NET\nCHARGEABLE\nTIME"
+        ]
+      ]
+    },
+    "page_4": {
+      "tables": [
+        [
+          "P.O. #\n1170895 | JOB #\n1170895 | DATE\n02.27.25",
+          "BILL TO\nGRANITE | SHIPPER (RECEIVED FROM) | CONSIGNEE (DELIVERED TO)",
+          "STREET OR BOX | STREET OR BOX",
+          "STREET OR BOX\nHWY N/B\nCITY",
+          "CITY\nSTATE | CITY\nSTATE",
+          "SANTA CRUZ CA,\nSTATE | COMMODITY | TRAILER OWNER",
+          "PRIME CARRIER\nTRIVALLEY WATER. | UNDERLYING CARRIER | TYPE LOADING :unselected:\n:unselected:\nBUNKER\nPOWER"
+        ],
+        [
+          "TAG NO. | WEIGHT | COMMODITY | LOADING | UNLOADING | STAND-BY\nTIME | BRIDGE\nCHARGE",
+          "ARRIVED | DEPART | ARRIVED | DEPART",
+          "1 | DIRT\" | 8:00 | 9:00 | 9:15 | 9130",
+          "2 | DIRT | 9:45 | 10:00 | 10:30 | 10:45",
+          "3 | DIRT\" | 11:00 | 1:00 | 3:25 | 3:30",
+          "4 | 3:45 | 4:00",
+          "5",
+          "6",
+          "7",
+          "8 | Empay",
+          "9",
+          "10",
+          "11"
+        ],
+        [
+          "FOR OFFICE USE ONLY",
+          "TOTAL STAND-BY",
+          "TOTAL BRIDGE CHARGE",
+          "TOTAL TONS",
+          "HOURLY RATE | TONNAGE",
+          "TOTAL CHARGES\n8.0"
+        ],
+        [
+          "TRUCK NO.\n01 | SEMI-TRACTOR",
+          "TRAILER NO. | TRANSPORT",
+          "SUPER 10 | SEMI END",
+          "TRANSFER | 10-WHEELER",
+          "FLATBED | TRAILER",
+          "OTHER | WATER TRUCK"
+        ],
+        [
+          "TIME DRIVER REPORTED AT LOCATION | NO. OF AXLES",
+          "STARTING\nTIME OF\nLAST TRIP | STARTING TIME\nUNLOADING\nLAST LOAD | OVERALL TIME\nINCLUDING\nRETURN TRIP",
+          "ENDING\nTIME OF\nLAST TRIP | ENDING TIME\nUNLOADING\nLAST LOAD | DEDUCTIBLE\nTIME",
+          "RUNNING\nTIME OF\nLAST TRIP | ELAPSED TIME\nUNLOADING\nLAST LOAD | NET\nCHARGEABLE\nTIME"
+        ]
+      ]
+    },
+    "page_5": {
+      "tables": [
+        [
+          "P.O. #\n1170895 | JOB #\n11 70 895 | DATE\n02.28.25",
+          "BILL TO\nGRANITE | SHIPPER (RECEIVED FROM) | CONSIGNEE (DELIVERED TO)",
+          "STREET OR BOX | STREET OR BOX",
+          "STREET OR BOX\nHWY\\ N/B\nCITY\nSTATE",
+          "CITY\nSTATE | CITY\nSTATE",
+          "SANTA CRUZ CA, | COMMODITY | TRAILER OWNER",
+          "PRIME CARRIER\nTRI VALLEY WATER | UNDERLYING CARRIER | TYPE LOADING :unselected:\n:unselected:\nBUNKER\nPOWER"
+        ],
+        [
+          "TAG NO. | WEIGHT | COMMODITY | LOADING | UNLOADING | STAND-BY\nTIME | BRIDGE\nCHARGE",
+          "ARRIVED | DEPART | ARRIVED | DEPART",
+          "1 | 15667557 | 16.21 | 3/4 HMA | 7:00 | 9:15 | 10:00 | 10:30",
+          "2 | 5667577 | 16.67 | 3/4 HMA | 11:15 | 11:30 | 2:15 | 2:30",
+          "3 | 2:45 | 3:00",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8 | 13:00",
+          "9 | LUIS",
+          "10",
+          "11"
+        ],
+        [
+          "FOR OFFICE USE ONLY",
+          "TOTAL STAND-BY",
+          "TOTAL BRIDGE CHARGE",
+          "TOTAL TONS",
+          "HOURLY RATE | TONNAGE",
+          "TOTAL CHARGES\n8.0"
+        ],
+        [
+          "TRUCK NO.\n01 | SEMI-TRACTOR",
+          "TRAILER NO. | TRANSPORT",
+          "SUPER 10 | SEMI END",
+          "TRANSFER | 10-WHEELER",
+          "FLATBED | TRAILER",
+          "OTHER | WATER TRUCK"
+        ],
+        [
+          "TIME DRIVER REPORTED AT LOCATION | NO. OF AXLES",
+          "STARTING\nTIME OF\nLAST TRIP | STARTING TIME\nUNLOADING\nLAST LOAD | OVERALL TIME\nINCLUDING\nRETURN TRIP",
+          "ENDING\nTIME OF\nLAST TRIP | ENDING TIME\nUNLOADING\nLAST LOAD | DEDUCTIBLE\nTIME",
+          "RUNNING\nTIME OF\nLAST TRIP | ELAPSED TIME\nUNLOADING\nLAST LOAD | NET\nCHARGEABLE\nTIME"
+        ]
+      ]
+    },
+    "page_6": {
+      "tables": [
+        [
+          "P.O. #\n1170895 | JOB #\n1170895 | DATE\n03.01.25",
+          "BILL TO\nGRANITE\nSTREET OR BOX\nHwyl NB | SHIPPER (RECEIVED FROM) | CONSIGNEE (DELIVERED TO)",
+          "STREET OR BOX | STREET OR BOX",
+          "CITY\nSTATE | CITY\nSTATE",
+          "CITY\nSANTA CRUZ CA,\nSTATE | COMMODITY | TRAILER OWNER",
+          "PRIME CARRIER\nTRI VALLEY WATER | UNDERLYING CARRIER\n1 | TYPE LOADING :unselected:\n:unselected:\nBUNKER\nPOWER"
+        ],
+        [
+          "TAG NO. | WEIGHT | COMMODITY | LOADING | UNLOADING | STAND-BY\nTIME | BRIDGE\nCHARGE",
+          "ARRIVED | DEPART | ARRIVED | DEPART",
+          "1 | 15667588 | 16.80 | 1/2 HMA | 6:30 | 7:00 | 8:00 | 9:00",
+          "2 | 15667593 | 16.53 | 1/2 HMA | 10:00 | 10:15 | 12:45 | 11 00",
+          "3 | \"DIRT\" | 2:25 | 2:30 | 3:15 | 3:30",
+          "4 | DIRTY | 3:45 | 4:00",
+          "5 | CEIVE | D\n2025",
+          "6 | LOADED",
+          "7 | R | 04 MAR",
+          "8",
+          "9 | Valley Water | Trucks Inc.",
+          "10 | Tri",
+          "11"
+        ],
+        [
+          "FOR OFFICE USE ONLY",
+          "TOTAL STAND-BY",
+          "TOTAL BRIDGE CHARGE",
+          "TOTAL TONS",
+          "HOURLY RATE | TONNAGE",
+          "TOTAL CHARGES",
+          "10.0"
+        ],
+        [
+          "TRUCK NO.\n01 | SEMI-TRACTOR",
+          "TRAILER NO. | TRANSPORT",
+          "SUPER 10 | SEMI END",
+          "TRANSFER | 10-WHEELER",
+          "FLATBED | TRAILER",
+          "OTHER | WATER TRUCK"
+        ],
+        [
+          "TIME DRIVER REPORTED AT LOCATION | NO. OF AXLES",
+          "STARTING\nTIME OF\nLAST TRIP | STARTING TIME\nUNLOADING\nLAST LOAD | OVERALL TIME\nINCLUDING\nRETURN TRIP",
+          "ENDING\nTIME OF\nLAST TRIP | ENDING TIME\nUNLOADING\nLAST LOAD | DEDUCTIBLE\nTIME",
+          "RUNNING\nTIME OF\nLAST TRIP | ELAPSED TIME\nUNLOADING\nKAST LOAD | NET\nCHARGEABLE\nTIME"
+        ]
+      ]
+    }
+  }
+}
