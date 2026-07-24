@@ -352,7 +352,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         ocr_json_file = sys.argv[1]
     else:
-        ocr_json_file = "t2_invoice_extraction.json"
+        ocr_json_file = "outputs/t1_layout_extraction.json"
 
     print(
         f"Testing Foundry restructuring on existing OCR file: {ocr_json_file}",

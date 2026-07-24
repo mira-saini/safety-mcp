@@ -1,12 +1,7 @@
 from pathlib import Path
-import sys
-import io
-import pytesseract
-import fitz  # PyMuPDF
-import pytesseract
-from PIL import Image
-
-
+import json
+from helpers.ocr_extract_helpers import extract_document_intelligence_payload
+from helpers.foundry_restructure_helpers import map_ocr_payload_to_sharepoint_rows
 try:
     from __main__ import mcp
 except ImportError:
@@ -15,62 +10,42 @@ except ImportError:
 
 """
 List of Tools: 
-1. Get ticket number or return null
-2. Get material type or return null
-3. Get time-in/time-out or return null
-4. Upload to sharepoint site
+1. Extract OCR from PDF and return JSON
+2. Get ticket number or return null
+3. Get material type or return null
+4. Get time-in/time-out or return null
+5. Upload to sharepoint site
 """
 
 print("Loading test_tools.py...")
 
 @mcp.tool()
-def extract_ocr(pdf_path: str) -> str:
+def extract_and_map_ticket_pdf(pdf_path: str) -> str:
     """
-    Extracts text from a PDF and returns it as a string.
-    Uses direct PDF text extraction first, then falls back to OCR using PyMuPDF + Tesseract.
-    Does NOT require Poppler.
+    Extracts OCR data from a truck ticket PDF using Azure Document Intelligence,
+    then maps the OCR output into SharePoint-ready ticket rows using Azure AI Foundry.
     """
-
-    print(f"Processing PDF: {pdf_path}", file=sys.stderr)
 
     path = Path(pdf_path)
 
     if not path.exists():
-        raise FileNotFoundError(f"PDF file not found: {pdf_path}")
+        raise FileNotFoundError(f"PDF not found: {pdf_path}")
 
-    import fitz  # PyMuPDF
-    import pytesseract
-    from PIL import Image
+    ocr_payload_json = extract_document_intelligence_payload(str(path))
 
-    doc = fitz.open(str(path))
-    ocr_text = []
+    ocr_payload = json.loads(ocr_payload_json)
 
-    zoom = 4  # Increase for better OCR quality
-    matrix = fitz.Matrix(zoom, zoom)
+    sharepoint_rows = map_ocr_payload_to_sharepoint_rows(
+        ocr_payload=ocr_payload,
+        attachment_name=path.name,
+    )
 
-    for page_number in range(len(doc)):
-        print(f"OCR page {page_number + 1}/{len(doc)}", file=sys.stderr)
-
-        page = doc[page_number]
-
-        pix = page.get_pixmap(matrix=matrix, alpha=False)
-
-        image_bytes = pix.tobytes("png")
-        image = Image.open(io.BytesIO(image_bytes))
-        image = image.convert("L")
-
-        text = pytesseract.image_to_string(image,config="--oem 3 --psm 4").strip()
-
-        if text:
-            ocr_text.append(text)
-
-    doc.close()
-
-    if ocr_text:
-        print("OCR extraction succeeded.", file=sys.stderr)
-        return "\n\n".join(ocr_text)
-
-    return ""
+    # MCP tools should usually return strings, so return formatted JSON
+    return json.dumps(
+        sharepoint_rows,
+        indent=2,
+        ensure_ascii=False
+    )
 
 
 @mcp.tool()
@@ -94,7 +69,7 @@ def get_material_type(contents: str) -> str:
 @mcp.tool()
 def get_time_in(contents: str) -> str:
     """
-    Searches a PDF of a ticket to locate the time-out.
+    Searches a PDF of a ticket to locate the time-in.
 
     """
 
@@ -103,7 +78,7 @@ def get_time_in(contents: str) -> str:
 @mcp.tool()
 def get_time_out(contents: str) -> str:
     """
-    Searches a PDF of a ticket to locate the time-in.
+    Searches a PDF of a ticket to locate the time-out.
 
     """
 
